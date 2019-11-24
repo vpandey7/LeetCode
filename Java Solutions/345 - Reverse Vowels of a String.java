@@ -1,7 +1,5 @@
 class Solution {
     public String reverseVowels(String s) {
-        
-    s.toLowerCase();
 	Set<Character> vowels = new HashSet<>();
 	vowels.add('a');
 	vowels.add('e');

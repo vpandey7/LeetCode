@@ -11,14 +11,10 @@
  */
 public class Solution {
     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
-        
         if(headA==null || headB == null) return null;
-        
         ListNode aNode = headA;
         ListNode bNode = headB;
-        
         while(aNode!=bNode){
-            
             if(aNode == null){
                 aNode = headB;
             }else{
@@ -30,7 +26,6 @@ public class Solution {
             }else{
                 bNode = bNode.next;
             }
-            
         }
         return aNode;
     }
