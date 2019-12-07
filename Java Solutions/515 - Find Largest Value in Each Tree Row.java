@@ -4,9 +4,10 @@
  */
 class Solution {
     public List<Integer> largestValues(TreeNode root) {
-        // if(root == null) return 0;
-        List<Integer> result = new ArrayList<>();
 
+        List<Integer> result = new ArrayList<>();
+        if (root == null)
+            return result;
         Queue<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         while (!queue.isEmpty()) {
